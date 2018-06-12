@@ -17,6 +17,6 @@ public class Vehicle : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        rb.velocity = Speed;
+        // zrb.velocity = Speed;
     }
 }
