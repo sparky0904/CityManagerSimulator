@@ -7,6 +7,8 @@ public class Vehicle : MonoBehaviour
     private Rigidbody rb;
     private float Speed;
 
+    public float Accelerator = 0;
+
     // Use this for initialization
     private void Start()
     {

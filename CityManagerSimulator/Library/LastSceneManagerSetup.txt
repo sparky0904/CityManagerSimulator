@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/TestCar.unity
+- path: Assets/Scenes/Sandpit.unity
   isLoaded: 1
   isActive: 1
