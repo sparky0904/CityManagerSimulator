@@ -113,33 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &93087671 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1323973216883694, guid: d146712c089f3bd46b84e28f3f657362,
-    type: 2}
-  m_PrefabInternal: {fileID: 1392693208}
---- !u!114 &93087672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 93087671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5af2e431f585b4c46a4c3ec86506324c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &93087673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 93087671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba4f22cc539f5724a9cfc66076c95658, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &93087675 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4544486927767666, guid: d146712c089f3bd46b84e28f3f657362,
@@ -316,75 +289,6 @@ Prefab:
     - target: {fileID: 4544486927767666, guid: d146712c089f3bd46b84e28f3f657362, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 146315347024914852, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionDistance
-      value: 0.19620001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4544486927767666, guid: d146712c089f3bd46b84e28f3f657362, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 146870093698085936, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionSpring.spring
-      value: 34791.406
-      objectReference: {fileID: 0}
-    - target: {fileID: 146870093698085936, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionSpring.damper
-      value: 5566.625
-      objectReference: {fileID: 0}
-    - target: {fileID: 146870093698085936, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionDistance
-      value: 0.19620001
-      objectReference: {fileID: 0}
-    - target: {fileID: 146870093698085936, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_ForceAppPointDistance
-      value: 0.67725265
-      objectReference: {fileID: 0}
-    - target: {fileID: 146315347024914852, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionSpring.spring
-      value: 40706.492
-      objectReference: {fileID: 0}
-    - target: {fileID: 146315347024914852, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionSpring.damper
-      value: 6513.039
-      objectReference: {fileID: 0}
-    - target: {fileID: 146315347024914852, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_ForceAppPointDistance
-      value: 0.67725265
-      objectReference: {fileID: 0}
-    - target: {fileID: 146454057533738220, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_ForceAppPointDistance
-      value: 0.67725265
-      objectReference: {fileID: 0}
-    - target: {fileID: 146195651578266930, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionSpring.spring
-      value: 34293.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 146195651578266930, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionSpring.damper
-      value: 5486.962
-      objectReference: {fileID: 0}
-    - target: {fileID: 146195651578266930, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_SuspensionDistance
-      value: 0.1962
-      objectReference: {fileID: 0}
-    - target: {fileID: 146195651578266930, guid: d146712c089f3bd46b84e28f3f657362,
-        type: 2}
-      propertyPath: m_ForceAppPointDistance
-      value: 0.67725265
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d146712c089f3bd46b84e28f3f657362, type: 2}

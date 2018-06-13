@@ -9,6 +9,7 @@ public enum theDriveType
 	AllWheelDrive
 }
 
+[RequireComponent(typeof(Vehicle))]
 public class myWheelDrive : MonoBehaviour
 {
     [Tooltip("Maximum steering angle of the wheels")]
@@ -31,10 +32,12 @@ public class myWheelDrive : MonoBehaviour
 	public theDriveType driveType;
 
     private WheelCollider[] m_Wheels;
+    private Vehicle vehicle;
 
     // Find all the WheelColliders down in the hierarchy.
 	void Start()
 	{
+        vehicle = GetComponent<Vehicle>();
 		m_Wheels = GetComponentsInChildren<WheelCollider>();
 
 		for (int i = 0; i < m_Wheels.Length; ++i) 
@@ -57,10 +60,12 @@ public class myWheelDrive : MonoBehaviour
 	{
 		m_Wheels[0].ConfigureVehicleSubsteps(criticalSpeed, stepsBelow, stepsAbove);
 
-		float angle = maxAngle * Input.GetAxis("Horizontal");
-		float torque = maxTorque * Input.GetAxis("Vertical");
+        // float angle = maxAngle * Input.GetAxis("Horizontal");
+        // float torque = maxTorque * Input.GetAxis("Vertical");
+        float angle = maxAngle * vehicle.TurnAngle;
+        float torque = maxTorque * vehicle.Accelerator;
 
-		float handBrake = Input.GetKey(KeyCode.X) ? brakeTorque : 0;
+        float handBrake = Input.GetKey(KeyCode.X) ? brakeTorque : 0;
 
 		foreach (WheelCollider wheel in m_Wheels)
 		{
