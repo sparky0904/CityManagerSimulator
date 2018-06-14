@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(myWheelDrive))]
+[RequireComponent(typeof(Vehicle))]
 public class Driver : MonoBehaviour
 {
     private Vehicle vehicle;
@@ -11,12 +11,14 @@ public class Driver : MonoBehaviour
     private float newBrakeForceAmount;
     private float newAcceleratorForceAmount;
     private float newTurnAngleAmount;
+    private int requiredSpeed;
 
     // Use this for initialization
     private void Start()
     {
         vehicle = GetComponent<Vehicle>();
         wheelDrive = GetComponent<myWheelDrive>();
+        requiredSpeed = 10;
     }
 
     // Update is called once per frame
@@ -51,7 +53,7 @@ public class Driver : MonoBehaviour
 
     private void Drive()
     {
-        vehicle.Accelerator = newAcceleratorForceAmount;
+        vehicle.Accelerator = (vehicle.SpeedMPH <= requiredSpeed) ? newAcceleratorForceAmount : -1;
         vehicle.Brake = newBrakeForceAmount;
     }
 }

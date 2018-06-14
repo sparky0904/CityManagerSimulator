@@ -1,15 +1,6 @@
 ﻿using UnityEngine;
 using System;
 
-[Serializable]
-public enum theDriveType
-{
-    RearWheelDrive,
-    FrontWheelDrive,
-    AllWheelDrive
-}
-
-[RequireComponent(typeof(Vehicle))]
 public class myWheelDrive : MonoBehaviour
 {
     [Tooltip("Maximum steering angle of the wheels")]

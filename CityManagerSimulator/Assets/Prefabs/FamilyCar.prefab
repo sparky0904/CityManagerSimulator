@@ -67,7 +67,6 @@ GameObject:
   - component: {fileID: 4544486927767666}
   - component: {fileID: 54602176037478904}
   - component: {fileID: 114058053644769310}
-  - component: {fileID: 114108017994989096}
   - component: {fileID: 114031772732777598}
   - component: {fileID: 114960159204850802}
   m_Layer: 0
@@ -414,25 +413,6 @@ MonoBehaviour:
   dampingRatio: 0.8
   forceShift: 0.03
   setSuspensionDistance: 1
---- !u!114 &114108017994989096
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1323973216883694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36ed7128051760b42bc56c15e5a6657d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxAngle: 30
-  maxTorque: 900
-  brakeTorque: 30000
-  wheelShape: {fileID: 115638, guid: 2d269fe0b3459fd4b82b35627ebdb76b, type: 2}
-  criticalSpeed: 5
-  stepsBelow: 5
-  stepsAbove: 1
-  driveType: 0
 --- !u!114 &114960159204850802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -444,6 +424,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba4f22cc539f5724a9cfc66076c95658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAngle: 30
+  maxTorque: 900
+  brakeTorque: 30000
+  wheelShape: {fileID: 115638, guid: 2d269fe0b3459fd4b82b35627ebdb76b, type: 2}
+  criticalSpeed: 5
+  stepsBelow: 5
+  stepsAbove: 1
+  driveType: 0
   sensorLength: 10
   frontSensorPosition: {x: 0, y: 0, z: 0.5}
   frontSideSensorPosition: 0.7
